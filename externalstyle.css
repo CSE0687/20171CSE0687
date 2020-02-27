@@ -42,9 +42,61 @@ text-shadow:4px 4px 8px white;
 }
 img:hover{
 border:0px;
-border:3px solid blue;
+border:3px ridge blue;
 height:200px;
 width:100px;
-moz-opacity:0.6;
+opacity:0.6;
 }
+
+#id1{
+color:blue;
+}
+.mycolour{
+color:red;
+}
+
+p.one{
+border-style:solid;
+border-width:5px;
+border-color:green;
+color:yellow;
+}
+
+p.two{
+border-style:dashed;
+border-width:5px;
+border-color:orange;
+color:yellow;
+}
+
+p.three{
+border-style:dashed;
+border-width:5px;
+border-color:orange blue green red;
+color:yellow;
+}
+
+p.set{
+border-top-style:solid;
+border-right-style:solid;
+border-bottom-style:solid;
+border-left-style:solid;
+border-color:red;
+color:blue;
+background-color:lightgrey;
+}
+
+p.mar{
+border-color:red;
+margin:25px 50px 75px 100px;
+color:yellow;
+}
+
+div{
+width:300px;
+margin:auto;
+border:1px solid red;
+color
+}
+
 
