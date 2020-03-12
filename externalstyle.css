@@ -1,7 +1,7 @@
 body
 {
 
-background-image:radial-gradient(red 40%,green 50%);
+background-image:radial-gradient(white 0%,green 50%);
 background-repeat:repeat;
 background-attachment:fixed;
 background-size:cover;
@@ -155,7 +155,7 @@ color:black;
 
 a.tw
 {
-color:green;
+color:blue;
 text-decoration:none;
 }
 
@@ -163,9 +163,9 @@ a.t
 {
 margin:5px;
 padding:2px;
-border-color:solid green;
+border-color:solid yellow;
 text-decoration:none;
-color:green;
+color:blue;
 border:solid;
 }
 a.tq
@@ -225,6 +225,72 @@ div.two
 background-color:white;
 opacity:0.4;
 border:solid grey;
+}
+
+div.three
+{
+width:100px;
+height:100px;
+background:lightblue;
+transition:width 2s,height 4s;
+}
+ 
+div.three:hover{
+color:blue;
+width:300px;
+height:300px;
+transform: rotateZ(90deg);
+
+}
+
+div.five
+{
+width:100px;
+height:100px;
+background:pink;
+transition:width 2s,height 4s,transform 2s;
+
+}
+
+div.five:hover{
+color:red;
+width:300px;
+height:300px;
+transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+@keyframes example {
+  from {background-color: yellow;}
+  to {background-color: pink;}
+}
+div.six{
+ 
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes ex {
+  0%   {transfrom:rotate(0deg);background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+div.seven{
+ width: 70px;
+height: 47px;
+background: #92B901;
+color: #ffffff;
+position: relative;
+font-weight: bold;
+font-size: 20px;
+padding: 10px;
+animation: animated_div 5s 1;
+animation-name: ex;
+border-radius: 5px;
 }
 
 
