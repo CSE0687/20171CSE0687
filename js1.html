@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>JS Internal Script</title>
+<script type="text/JavaScript">
+function hello()
+{
+alert("Hello,World");
+}
+function eventhandler()
+{
+alert("Im event handler!!");
+}
+var a=10;
+var b=20;
+var c="test";
+var lr="<br/>";
+var count=0;
+
+document.write("starting loop"+"<br/>");
+do
+{
+document.write("current count:"+count+"<br/>");
+count++;
+}
+while(count<5);
+document.write("Loop stopped"+"<br/>");
+
+function getvalue()
+{
+var retval=prompt("Enter ur name:","ur name");
+document.write("u have entered:"+retval);
+}
+
+var firstNumber;
+var secondNumber;
+var number1;
+var number2;
+var sum;
+
+firstNumber = window.prompt( "Enter first integer" );
+secondNumber = window.prompt( "Enter second integer ");
+
+number1 = parseInt( firstNumber );
+number2 = parseInt( secondNumber );
+sum = number1 + number2; // add the numbers
+document.writeln("<h1>The sum is "+sum+"</h1>");
+
+function warn()
+{
+alert("this is warning message:");
+document.write("this is warning message");
+}
+
+function getconfirmation()
+{
+var retval=confirm("Do u want to continue?");
+if(retval==true)
+{
+document.write("user wants to continue!");
+return true;
+}
+else
+{
+document.write("user does not wants to continue!");
+return false;
+}
+}
+document.write("a+b+c=");
+result=a+b+c;
+document.write(result);
+document.write(lr); 
+
+r1=(typeof a=="string"?"A is string":"A is numeric");
+document.write("Result=>");
+document.write(r1);
+document.write(lr);
+
+function over()
+{
+document.write("Mouse over");
+}
+
+function out()
+{
+document.write("Mouse out");
+}
+
+</script>
+</head>
+<body>
+<input type="button" onclick="hello();" name="ok" value="click me"/>
+<h1>Event handler example</h1>
+<p onmouseover="eventhandler();">Bring your mouse here to see an alert</p>
+<br>
+<h1>Prompt dialog box example</h1>
+<form>
+<input type="button"  value="click me" onclick="getvalue();"/>
+</form>
+<br>
+<h1>Confirmation dialog box example</h1>
+<form>
+<input type="button" value="click me" onclick="getconfirmation();"/>
+</form>
+<br>
+<h1> Alert example</h1>
+<form>
+<input type="button" value="click me" onclick="warn();"/>
+</form>
+<br>
+
+<br>
+<h1>MouseOver and MouseOut example</h1>
+<p>Bring mouse inside div to see result</p>
+<div onmouseover="over()" onmouseout="out()">
+<br>
+<h1>this is inside div</h1>
+</div>
+
+</body>
+</html>
