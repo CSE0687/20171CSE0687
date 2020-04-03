@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>forms</title>
+</head>
+<body bgcolor="skyblue">
+<h1>Single line text input example</h1>
+<form>
+firstname:<input type="text" name="first_name">
+<br>
+lastname:<input type="text" name="last_name">
+</form>
+<h1>Multiple line text input example</h1>
+<form>
+description:</br>
+<textarea rows="5" cols="50">
+Enter description here...
+</textarea>
+</form>
+<h1>Checkbox example</h1>
+<form>
+<input type="checkbox" value="bike">I have a bike<br>
+<input type="checkbox" value="bike">I have a car<br>
+</form>
+<h1>Radio button example</h1>
+<form>
+<input type="radio" name="gender" value="male">male<br>
+<input type="radio" name="gender" value="female">female<br>
+<input type="radio" name="gender" value="others">others<br>
+</form>
+<h1>Select box example</h1>
+<select name="series">
+<option value="Got">Game of thrones</options>
+<option value="13">13 reasons y</option>
+<option value="st">Stranger Things</option>
+<option value="bb">Big Bang theory</option>
+</select>
+<h1>Select box attributes</h1>
+<h2>selected attribute</h2>
+<select name="series">
+<option value="Got" selected>Game of thrones</options>
+<option value="13">13 reasons y</option>
+<option value="st">Stranger Things</option>
+<option value="bb">Big Bang theory</option>
+</select>
+
+<h2>size attribute</h2>
+<select name="series" size="3">
+<option value="Got" selected>Game of thrones</options>
+<option value="13">13 reasons y</option>
+<option value="st">Stranger Things</option>
+<option value="bb">Big Bang theory</option>
+</select>
+
+<h2>multiple attribute</h2>
+<select name="series" size="4" multiple>
+<option value="Got" selected>Game of thrones</options>
+<option value="13">13 reasons y</option>
+<option value="st">Stranger Things</option>
+<option value="bb">Big Bang theory</option>
+</select>
+
+<br>
+<br>
+<form>
+<input type="button" name="ok" value="Ok"/>
+<br>
+<br>
+<button type="button" onclick="alert('hi')">click me</button>
+</form>
+
+<h1>Input type examples</h1>
+<input type="password" name="psw">
+<input type="submit" value="submit">
+<input type="reset">
+<input type="color">
+<br>
+<br>
+<br>
+<input type="date">
+<input type="email">
+<input type="file">
+<br>
+<br>
+<br>
+<input type="number">
+<input type="time">
+<input type="url">
+</body>
+</html>
